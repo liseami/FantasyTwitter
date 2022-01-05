@@ -7,19 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A24070D427856354000A5C30 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24070D327856354000A5C30 /* Tabbar.swift */; };
+		A2BB753A2785821D00C457D2 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB75392785821D00C457D2 /* TimeLineView.swift */; };
+		A2BB753C278582BF00C457D2 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB753B278582BF00C457D2 /* SearchView.swift */; };
+		A2BB753E278582C600C457D2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB753D278582C600C457D2 /* Message.swift */; };
+		A2BB7540278582CF00C457D2 /* PolularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB753F278582CF00C457D2 /* PolularView.swift */; };
+		A2BB75432785830600C457D2 /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB75422785830600C457D2 /* ProFileView.swift */; };
+		A2BB75462785838F00C457D2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB75452785838F00C457D2 /* SettingView.swift */; };
 		A2F9DFD32785507F000A9D95 /* FantasyTwitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFAB2785507E000A9D95 /* FantasyTwitterApp.swift */; };
 		A2F9DFD52785507F000A9D95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFAC2785507E000A9D95 /* ContentView.swift */; };
 		A2F9DFD72785507F000A9D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F9DFAD2785507F000A9D95 /* Assets.xcassets */; };
+		A2F9DFEA2785614D000A9D95 /* Fantline-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFE92785614D000A9D95 /* Fantline-Bridging-Header.m */; };
+		A2F9DFEC278561A2000A9D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFEB278561A2000A9D95 /* AppDelegate.swift */; };
+		A2F9DFEF278561C4000A9D95 /* LacunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFEE278561C4000A9D95 /* LacunchManager.swift */; };
+		A2F9DFF2278561EC000A9D95 /* PublicFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFF1278561EC000A9D95 /* PublicFuncs.swift */; };
+		A2F9DFFA27856207000A9D95 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFF427856207000A9D95 /* Buttons.swift */; };
+		A2F9DFFB27856207000A9D95 /* Comps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFF627856207000A9D95 /* Comps.swift */; };
+		A2F9DFFC27856207000A9D95 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFF727856207000A9D95 /* Font.swift */; };
+		A2F9DFFD27856207000A9D95 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFF827856207000A9D95 /* Color.swift */; };
+		A2F9DFFE27856207000A9D95 /* UIstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFF927856207000A9D95 /* UIstate.swift */; };
+		A2F9E00027856226000A9D95 /* DefultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9DFFF27856226000A9D95 /* DefultStore.swift */; };
 		BB045D72E1DECFBF48D381D5 /* Pods_FantasyTwitter__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6785D1340A40DA6D060A2A67 /* Pods_FantasyTwitter__iOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2648639395D6137C25A8128D /* Pods-FantasyTwitter (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasyTwitter (iOS).debug.xcconfig"; path = "Target Support Files/Pods-FantasyTwitter (iOS)/Pods-FantasyTwitter (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		6785D1340A40DA6D060A2A67 /* Pods_FantasyTwitter__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FantasyTwitter__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24070D327856354000A5C30 /* Tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		A2BB75392785821D00C457D2 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		A2BB753B278582BF00C457D2 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A2BB753D278582C600C457D2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A2BB753F278582CF00C457D2 /* PolularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolularView.swift; sourceTree = "<group>"; };
+		A2BB75422785830600C457D2 /* ProFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
+		A2BB75452785838F00C457D2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A2F9DFAB2785507E000A9D95 /* FantasyTwitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyTwitterApp.swift; sourceTree = "<group>"; };
 		A2F9DFAC2785507E000A9D95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2F9DFAD2785507F000A9D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A2F9DFB22785507F000A9D95 /* FantasyTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F9DFB22785507F000A9D95 /* 推特圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "推特圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F9DFE82785614D000A9D95 /* FantasyTwitter (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasyTwitter (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2F9DFE92785614D000A9D95 /* Fantline-Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Fantline-Bridging-Header.m"; sourceTree = "<group>"; };
+		A2F9DFEB278561A2000A9D95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2F9DFEE278561C4000A9D95 /* LacunchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LacunchManager.swift; sourceTree = "<group>"; };
+		A2F9DFF1278561EC000A9D95 /* PublicFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicFuncs.swift; sourceTree = "<group>"; };
+		A2F9DFF427856207000A9D95 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		A2F9DFF627856207000A9D95 /* Comps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comps.swift; sourceTree = "<group>"; };
+		A2F9DFF727856207000A9D95 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A2F9DFF827856207000A9D95 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A2F9DFF927856207000A9D95 /* UIstate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIstate.swift; sourceTree = "<group>"; };
+		A2F9DFFF27856226000A9D95 /* DefultStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefultStore.swift; sourceTree = "<group>"; };
 		D9067FC4A25965180DB1626C /* Pods-FantasyTwitter (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasyTwitter (iOS).release.xcconfig"; path = "Target Support Files/Pods-FantasyTwitter (iOS)/Pods-FantasyTwitter (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +78,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A2BB7541278582F900C457D2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB75422785830600C457D2 /* ProFileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A2BB75442785837F00C457D2 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB75452785838F00C457D2 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		A2F9DFA52785507E000A9D95 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +107,7 @@
 		A2F9DFB32785507F000A9D95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2F9DFB22785507F000A9D95 /* FantasyTwitter.app */,
+				A2F9DFB22785507F000A9D95 /* 推特圈.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +116,92 @@
 			isa = PBXGroup;
 			children = (
 				A2F9DFAB2785507E000A9D95 /* FantasyTwitterApp.swift */,
-				A2F9DFAC2785507E000A9D95 /* ContentView.swift */,
+				A2F9DFFF27856226000A9D95 /* DefultStore.swift */,
+				A2F9DFEB278561A2000A9D95 /* AppDelegate.swift */,
+				A2F9DFE92785614D000A9D95 /* Fantline-Bridging-Header.m */,
+				A2F9DFE82785614D000A9D95 /* FantasyTwitter (iOS)-Bridging-Header.h */,
 				A2F9DFAD2785507F000A9D95 /* Assets.xcassets */,
+				A2F9DFAC2785507E000A9D95 /* ContentView.swift */,
+				A2F9DFF0278561CE000A9D95 /* PART */,
+				A2F9DFF327856207000A9D95 /* UI */,
+				A2F9DFED278561BB000A9D95 /* TOOLS */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A2F9DFED278561BB000A9D95 /* TOOLS */ = {
+			isa = PBXGroup;
+			children = (
+				A2F9DFF1278561EC000A9D95 /* PublicFuncs.swift */,
+				A2F9DFEE278561C4000A9D95 /* LacunchManager.swift */,
+			);
+			path = TOOLS;
+			sourceTree = "<group>";
+		};
+		A2F9DFF0278561CE000A9D95 /* PART */ = {
+			isa = PBXGroup;
+			children = (
+				A24070D327856354000A5C30 /* Tabbar.swift */,
+				A2BB75442785837F00C457D2 /* Setting */,
+				A2BB7541278582F900C457D2 /* Profile */,
+				A2F9E00127856273000A9D95 /* Timeline */,
+				A2F9E004278562CF000A9D95 /* Polular */,
+				A2F9E0032785628E000A9D95 /* Search */,
+				A2F9E00227856287000A9D95 /* Message&Notice */,
+			);
+			path = PART;
+			sourceTree = "<group>";
+		};
+		A2F9DFF327856207000A9D95 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A2F9DFF427856207000A9D95 /* Buttons.swift */,
+				A2F9DFF527856207000A9D95 /* UIConfig */,
+				A2F9DFF927856207000A9D95 /* UIstate.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A2F9DFF527856207000A9D95 /* UIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A2F9DFF627856207000A9D95 /* Comps.swift */,
+				A2F9DFF727856207000A9D95 /* Font.swift */,
+				A2F9DFF827856207000A9D95 /* Color.swift */,
+			);
+			path = UIConfig;
+			sourceTree = "<group>";
+		};
+		A2F9E00127856273000A9D95 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB75392785821D00C457D2 /* TimeLineView.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		A2F9E00227856287000A9D95 /* Message&Notice */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB753D278582C600C457D2 /* Message.swift */,
+			);
+			path = "Message&Notice";
+			sourceTree = "<group>";
+		};
+		A2F9E0032785628E000A9D95 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB753B278582BF00C457D2 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A2F9E004278562CF000A9D95 /* Polular */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB753F278582CF00C457D2 /* PolularView.swift */,
+			);
+			path = Polular;
 			sourceTree = "<group>";
 		};
 		E7EEA9EB4CFA5C67B8274839 /* Pods */ = {
@@ -100,7 +233,7 @@
 			);
 			name = "FantasyTwitter (iOS)";
 			productName = "FantasyTwitter (iOS)";
-			productReference = A2F9DFB22785507F000A9D95 /* FantasyTwitter.app */;
+			productReference = A2F9DFB22785507F000A9D95 /* 推特圈.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,6 +248,7 @@
 				TargetAttributes = {
 					A2F9DFB12785507F000A9D95 = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -211,8 +345,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BB75432785830600C457D2 /* ProFileView.swift in Sources */,
+				A2F9DFFB27856207000A9D95 /* Comps.swift in Sources */,
+				A2F9DFFA27856207000A9D95 /* Buttons.swift in Sources */,
+				A2BB7540278582CF00C457D2 /* PolularView.swift in Sources */,
+				A2F9DFF2278561EC000A9D95 /* PublicFuncs.swift in Sources */,
+				A2F9DFFD27856207000A9D95 /* Color.swift in Sources */,
+				A24070D427856354000A5C30 /* Tabbar.swift in Sources */,
+				A2F9DFEC278561A2000A9D95 /* AppDelegate.swift in Sources */,
+				A2F9E00027856226000A9D95 /* DefultStore.swift in Sources */,
+				A2F9DFEA2785614D000A9D95 /* Fantline-Bridging-Header.m in Sources */,
+				A2BB75462785838F00C457D2 /* SettingView.swift in Sources */,
+				A2F9DFFC27856207000A9D95 /* Font.swift in Sources */,
 				A2F9DFD52785507F000A9D95 /* ContentView.swift in Sources */,
+				A2BB753C278582BF00C457D2 /* SearchView.swift in Sources */,
+				A2F9DFEF278561C4000A9D95 /* LacunchManager.swift in Sources */,
+				A2F9DFFE27856207000A9D95 /* UIstate.swift in Sources */,
+				A2BB753E278582C600C457D2 /* Message.swift in Sources */,
 				A2F9DFD32785507F000A9D95 /* FantasyTwitterApp.swift in Sources */,
+				A2BB753A2785821D00C457D2 /* TimeLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +487,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -351,13 +503,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTwitter;
-				PRODUCT_NAME = FantasyTwitter;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.twitterCircle;
+				PRODUCT_NAME = "推特圈";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "App/FantasyTwitter (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,8 +521,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -382,13 +537,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTwitter;
-				PRODUCT_NAME = FantasyTwitter;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.twitterCircle;
+				PRODUCT_NAME = "推特圈";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "App/FantasyTwitter (iOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

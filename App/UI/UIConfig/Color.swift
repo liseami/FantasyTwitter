@@ -12,7 +12,7 @@ extension Color  {
     
     
     
-    static var MainColor = Color("FilmBlue")
+    static var MainColor = Color("MainColor")
     static var SecondaryColor = Color.red
     
 
