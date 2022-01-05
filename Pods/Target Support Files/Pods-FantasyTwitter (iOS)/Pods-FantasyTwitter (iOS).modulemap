@@ -1,0 +1,6 @@
+framework module Pods_FantasyTwitter__iOS_ {
+  umbrella header "Pods-FantasyTwitter (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
