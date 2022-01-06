@@ -35,74 +35,74 @@ public struct MFont : ViewModifier{
             
         case .large32_R :
             return content
-                .font(.custom("Montserrat-Light", size: 32))
+                .font(.custom("MiSans-Regular", size: 32))
         case .large32_B :
             return content
-                .font(.custom("Montserrat-SemiBold", size: 32))
+                .font(.custom("MiSans-Semibold", size: 32))
             
         case .largeTitle_24_B:
             
             return content
-                .font(.custom("Montserrat-SemiBold", size: 24))
+                .font(.custom("MiSans-Semibold", size: 24))
                 
         case .LargeTitle_22_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 22))
+                .font(.custom("MiSans-Semibold", size: 22))
         case .Title_19_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 19))
+                .font(.custom("MiSans-Semibold", size: 19))
         case .Title_17_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 17))
+                .font(.custom("MiSans-Semibold", size: 17))
         case .Title_16_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 16))
+                .font(.custom("MiSans-Semibold", size: 16))
         case .Body_15_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 15))
+                .font(.custom("MiSans-Semibold", size: 15))
         case .Body_13_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 13))
+                .font(.custom("MiSans-Semibold", size: 13))
         case .Body_12_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 12))
+                .font(.custom("MiSans-Semibold", size: 12))
         case .Caption_10_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 10))
+                .font(.custom("MiSans-Semibold", size: 10))
         case .Caption_9_B:
             return content
-                .font(.custom("Montserrat-SemiBold", size: 9))
+                .font(.custom("MiSans-Semibold", size: 9))
             
         case .largeTitle_24_R:
             return content
-                .font(.custom("Montserrat-Light", size: 24))
+                .font(.custom("MiSans-Regular", size: 24))
         case .LargeTitle_22_R:
             return content
-                .font(.custom("Montserrat-Light", size: 22))
+                .font(.custom("MiSans-Regular", size: 22))
         case .Title_19_R:
             return content
-                .font(.custom("Montserrat-Light", size: 19))
+                .font(.custom("MiSans-Regular", size: 19))
         case .Title_17_R:
             return content
-                .font(.custom("Montserrat-Light", size: 17))
+                .font(.custom("MiSans-Regular", size: 17))
         case .Title_16_R:
             return content
-                .font(.custom("Montserrat-Light", size: 16))
+                .font(.custom("MiSans-Regular", size: 16))
         case .Body_15_R:
             return content
-                .font(.custom("Montserrat-Light", size: 15))
+                .font(.custom("MiSans-Regular", size: 15))
         case .Body_13_R:
             return content
-                .font(.custom("Montserrat-Light", size: 13))
+                .font(.custom("MiSans-Regular", size: 13))
         case .Body_12_R:
             return content
-                .font(.custom("Montserrat-Light", size: 12))
+                .font(.custom("MiSans-Regular", size: 12))
         case .Caption_10_R:
             return content
-                .font(.custom("Montserrat-Light", size: 10))
+                .font(.custom("MiSans-Regular", size: 10))
         case .Caption_9_R:
             return content
-                .font(.custom("Montserrat-Light", size: 9))
+                .font(.custom("MiSans-Regular", size: 9))
         }
     }
 }

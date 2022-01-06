@@ -31,16 +31,8 @@ extension Color  {
     static let Success = Color("Success")
     static let Warning = Color("Warning")
     
-    
-    
-    static var FilmBlue = Color("FilmBlue")
-    static var CashBlueLight = Color("CashBlueLight")
-    static var CashGreen = Color("CashGreen")
-    static var CashGreenLight = Color("CashGreenLight")
-    static var CashPink = Color("CashPink")
-    static var CashPinkLight = Color("CashPinkLight")
-    static var CashRed = Color("CashRed")
-    static var FilmYellow = Color("FilmYellow")
+    static let DeepBlue = Color("DeepBlue")
+    static let Purple = Color("Purple")
     
 }
 

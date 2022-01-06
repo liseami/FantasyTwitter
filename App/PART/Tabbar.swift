@@ -27,6 +27,12 @@ struct Tabbar: View {
                 }
             }
         }
+        .background(
+            ZStack{
+                Color.back1.opacity(0.5).ignoresSafeArea()
+                BlurView().ignoresSafeArea()
+            }
+            )
         .frame( height: 44, alignment: .center)
         .overlay(Divider().opacity(0.3),alignment: .top)
         .overlay(
@@ -34,8 +40,9 @@ struct Tabbar: View {
             .progressViewStyle(LinearProgressViewStyle(tint: Color.MainColor))
             .frame(height: 0.5)
             .ifshow(uistate.TabbarProgress != 0),alignment: .top)
-            .background(Color.Card.ignoresSafeArea())
-            .MoveTo(.bottomCenter)
+        .background(Color.Card.ignoresSafeArea())
+        .MoveTo(.bottomCenter)
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         
     }
 }

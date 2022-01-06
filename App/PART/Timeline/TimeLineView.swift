@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import FantasyUI
 
 struct TimeLineView: View {
     @State private var offset : CGFloat = 0
+    @ObservedObject var uistate = UIState.shared
     var body: some View {
         PF_OffsetScrollView(offset: $offset) {
-            Text("TimeLine")
+         
+            VStack(spacing:12){
+                ForEach(0..<12){ index in
+                    Button {
+                        uistate.showPostDetailView.toggle()
+                    } label: {
+                        PostRaw(username: randomString(3), usernickname: "liseami", postcontent: randomString(Int.random(in: 12...140)))
+                    }
+
+                  
+                        
+                }
+            }
+            .padding(.all,12)
+            
         }
         .PF_Navitop(style: .large) {
             BlurView()
@@ -26,6 +42,6 @@ struct TimeLineView: View {
 
 struct TimeLineView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeLineView()
+        ContentView()
     }
 }

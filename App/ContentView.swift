@@ -13,32 +13,46 @@ struct ContentView: View {
 
     var body: some View {
         
+    
         NavigationView {
             ZStack{
+                Color.BackGround.ignoresSafeArea()
                 switch uistate.TabbarIndex{
+                    
+                ///主页面
                 case .Timeline :  TimeLineView()
-                case .Poluar :  PolularView()
-                case .Search :  SearchView()
-                case .Message : Message()
+                case .Poluar   :  PolularView()
+                case .Search   :  SearchView()
+                case .Message  :  InBoxView()
+                    
                 }
-                Tabbar()
             }
+            ///Toolbar
             .toolbar {MainToolBar}
+            ///Navilink
+            ///个人主页
             .PF_Navilink(isPresented: $uistate.showProfileView) {
                 ProFileView()
             }
+            ///Post详情
+            .PF_Navilink(isPresented: $uistate.showPostDetailView, content: {
+                PostDetailView()
+            })
+           
+            
         }
+        .overlay( Tabbar())
         .PF_FullScreen(isPresented: $uistate.showSettingView) {
         } content: {
             SettingView()
         }
         .accentColor(.fc1)
-        .navigationViewStyle(.stack)
+        .navigationViewStyle(StackNavigationViewStyle())
         .PF_OverProgressView(loadingState: .none)
         
     }
     
-    
+    ///ToolBar
     var MainToolBar :  some ToolbarContent {
         Group{
             ToolbarItem(placement: .navigationBarTrailing) {

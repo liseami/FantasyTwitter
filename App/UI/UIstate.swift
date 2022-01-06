@@ -13,10 +13,14 @@ class UIState : ObservableObject{
     
     let userdefult = UserDefaults.standard
    
+    init(tabbarIndex : tabbarItemEnum = .Timeline){
+        self.TabbarIndex = tabbarIndex
+    }
+    
     // Tabar
     @Published var TabbarIndex : tabbarItemEnum = .Timeline
-    @Published var TabbarProgress : Double = 0.618
-    var tabbarItem : [tabbarItemEnum] = [.Timeline,.Search,.Message,.Poluar]
+    @Published var TabbarProgress : Double = 0
+    var tabbarItem : [tabbarItemEnum] = [.Timeline,.Poluar,.Search,.Message]
     
     enum tabbarItemEnum {
         case Timeline
@@ -28,11 +32,12 @@ class UIState : ObservableObject{
             case .Timeline:
                 return "Home"
             case .Search:
-                return "Customize"
-            case .Message:
                 return "Search"
-            case .Poluar :
+            case .Message:
                 return "Mail"
+            case .Poluar :
+                return "Customize"
+           
             }
         }
     }
@@ -40,4 +45,8 @@ class UIState : ObservableObject{
     ///hometool
     @Published var showSettingView : Bool = false
     @Published var showProfileView : Bool = false
+    
+    ///post
+    @Published var showPostDetailView : Bool = false
+    
 }

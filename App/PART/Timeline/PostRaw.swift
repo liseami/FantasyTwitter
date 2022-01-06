@@ -27,18 +27,27 @@ struct PostRaw: View {
                         .mFont(style: .Title_17_R,color: .fc2)
                 }
                 Text(postcontent)
+                    .multilineTextAlignment(.leading)
                     .PF_Leading()
                     .mFont(style: .Title_17_R,color: .fc1)
             }
         }
         .padding(.all,16)
-        .background(Color.back1)
+        .background(Color.Card)
         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 }
 
-struct PostView_Previews: PreviewProvider {
+struct PostRaw_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        PostRaw(username: "Liseami", usernickname: "liseami1", postcontent: randomString(140))
+            .previewLayout(.sizeThatFits)
+        ZStack{
+            Color.BackGround.ignoresSafeArea()
+            PostRaw(username: "Liseami", usernickname: "liseami1", postcontent: randomString(140))
+                .padding(.all,12)
+        }
+ 
+       
     }
 }

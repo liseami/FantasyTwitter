@@ -25,6 +25,7 @@ public func Customappearance() {
     UINavigationBar.appearance().standardAppearance = appearance
     UINavigationBar.appearance().scrollEdgeAppearance = appearance
     
+    
 
     UITableView.appearance().backgroundColor = UIColor(Color.BackGround)
     UITextView.appearance().backgroundColor = UIColor(Color.BackGround)
