@@ -31,10 +31,9 @@ struct ContentView: View {
             }
             .overlay(Tabbar())
             .overlay(TabbarBtn)
-            .PF_FullScreen(isPresented: $uistate.showSettingView) {
-            } content: {
+            .PF_Sheet(isPresented: $uistate.showSettingView, backColor: .clear, content: {
                 SettingView()
-            }
+            })
             .accentColor(.fc1)
             .navigationViewStyle(StackNavigationViewStyle())
             .PF_OverProgressView(loadingState: .none)
