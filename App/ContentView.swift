@@ -116,9 +116,6 @@ struct ContentView: View {
     }
     
     var searchBtn : some View {
-      
-
-        
             HStack(spacing:2){
                 ICON(name: "Search",fcolor: .fc2,size: 16)
                     Text("搜索Twitter")
@@ -133,10 +130,6 @@ struct ContentView: View {
                     madasoft()
                     SearchManager.shared.showSearchInputView = true
                 }
-        
-
-     
-        
     }
     
     
@@ -149,8 +142,9 @@ struct ContentView: View {
             }
         }
     }
+    
     var toolbarLeading : some View {
-        HStack(spacing:12){
+        HStack(spacing:18){
             Button {
                 uistate.showProfileView.toggle()
             } label: {

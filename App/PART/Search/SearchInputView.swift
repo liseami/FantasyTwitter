@@ -65,17 +65,16 @@ struct SearchInputView: View {
                     $0.font = UIFont.systemFont(ofSize: 17)
                     $0.placeholder = "搜索Twitter"
                 }
-                .padding(.all,14)
-                .frame(height: 36)
-                .background(Color.back1
-                .frame(height: 36))
+                .padding(.all,12)
+                .frame(height: 32)
+                .background(Color.back1)
                 .clipShape(Capsule(style: .continuous))
                 Spacer()
                
                 Button("取消"){
                     vm.showSearchInputView.toggle()
                 }
-                .mFont(style: .Title_17_R,color: .fc2)
+                .mFont(style: .Title_17_B,color: .fc2)
             }
             .padding(.horizontal,12)
             
@@ -89,8 +88,6 @@ struct SearchInputView: View {
             .frame(width: SW)
 
             
-            
-            Spacer()
           
             
         }
