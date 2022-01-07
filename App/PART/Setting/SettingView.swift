@@ -18,10 +18,11 @@ struct SettingView: View {
         
         VStack(spacing:0){
             SettingListRow(title: "邀请朋友使用TwitterO3", iconnmae: "Upload")
+            SettingListRow(title: "设置", iconnmae: "Gear")
             SettingListRow(title: "账号数据", iconnmae: "List")
-            SettingListRow(title: "充值", iconnmae: "Upload")
+            SettingListRow(title: "充值", iconnmae: "database")
             SettingListRow(title: "去AppStore评分", iconnmae: "Smiley")
-            SettingListRow(title: "意见反馈邮箱", iconnmae: "Upload")
+            SettingListRow(title: "意见反馈邮箱", iconnmae: "Mail")
             SettingListRow(title: "关于TwitterO3", iconnmae: "Link")
             SettingListRow(title: "账户", iconnmae: "Twitter Logo")
             

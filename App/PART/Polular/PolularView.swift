@@ -57,7 +57,7 @@ struct PolularView: View {
         }
         .frame(width: SW)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(Text("助推燃料"))
+        .navigationTitle(Text("TwitterO3"))
     }
 
     

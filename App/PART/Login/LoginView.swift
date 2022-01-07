@@ -11,18 +11,26 @@ import FantasyUI
 struct LoginView: View {
     
     
-    @State private var step : Int = 3
+    @State private var step : Int = 0
     
     var body: some View {
         
         
         ZStack{
             VStack{
-                Link(destination: URL(string: "https://twitter.com/liseami1")!) {
-                    Text("最新进展")
+                
+                
+//                Link(destination: URL(string: "https://twitter.com/liseami1")!) {
+//                    Text("最新进展")
+//                }
+                
+                Button("最新进展"){
+                    UIState.shared.logged = true
                 }
                 .mFont(style: .Title_17_B,color: .MainColor)
                 .frame(maxWidth:.infinity,alignment: .trailing)
+                
+                
                 Spacer()
                 Text("专业用户的，另一个Twitter客户端。更好地经营账号，获取粉丝，扩大营收 💸💸💸 ")
                         .mFont(style: .largeTitle_24_B,color: .fc1)

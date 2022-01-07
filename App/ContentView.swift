@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var uistate = UIState.shared
-    @State private var logged : Bool = true
+    
     
     var body: some View {
         
     
-        if !logged {
+        if !uistate.logged {
             LoginView()
         }else{
             NavigationView {
