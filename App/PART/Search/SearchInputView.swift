@@ -12,7 +12,7 @@ class SearchManager : ObservableObject{
     
     static let shared  = SearchManager()
     
-    
+    @Published var showSearchInputView : Bool = false
     enum searchResultSwitch : MTPageSegmentProtocol {
         case top
         case latest
@@ -52,11 +52,12 @@ struct SearchInputView: View {
     
     @State private var searchContext : String = ""
     @State private var firstResponder : Bool = true
-    @Binding var starttosearch : Bool
+    
     var body: some View {
         
 
         VStack{
+            
             HStack{
                 PF_TextField(text: $searchContext, isFirstResponder: $firstResponder){
                     $0.textAlignment = .left
@@ -72,11 +73,11 @@ struct SearchInputView: View {
                 Spacer()
                
                 Button("取消"){
-                    starttosearch = false
+                    vm.showSearchInputView.toggle()
                 }
                 .mFont(style: .Title_17_R,color: .fc2)
             }
-            
+            .padding(.horizontal,12)
             
             VStack(spacing:0){
                 MT_PageSegmentView(titles: vm.tabitems, offset: $offset)
@@ -86,15 +87,13 @@ struct SearchInputView: View {
                 }
             }
             .frame(width: SW)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(Text("助推燃料"))
+
             
             
             Spacer()
           
             
         }
-        .padding(.all,12)
         .navigationBarHidden(true)
         
         
@@ -123,6 +122,6 @@ struct SearchInputView: View {
 
 struct SearchInputView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchInputView(starttosearch: .constant(true))
+        SearchInputView()
     }
 }

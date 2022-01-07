@@ -11,6 +11,8 @@ struct SearchView: View {
  
     @State private var startToSearch : Bool = false
     @State private var offset : CGFloat = 0
+    @ObservedObject var vm = SearchManager.shared
+    
     var body: some View {
         
         
@@ -38,27 +40,11 @@ struct SearchView: View {
         }, TopCenterView: {
         })
         .navigationBarTitleDisplayMode(.inline)
-        .PF_Navilink(isPresented: $startToSearch) {
-            SearchInputView(starttosearch: $startToSearch)
+        .PF_Navilink(isPresented: $vm.showSearchInputView) {
+            SearchInputView()
         }
         .background(Color.Card.ignoresSafeArea())
-        .toolbar(content: {
-            HStack(spacing:0){
-                    Spacer()
-                ICON(name: "Search",fcolor: .fc2,size: 20)
-                    Text("搜索Twitter")
-                        .mFont(style: .Title_17_R,color: .fc2)
-                    Spacer()
-                }
-                .padding(.all,12)
-                .frame(width: SW * 0.68,height: 36)
-                .background(Color.back1
-                .frame(height: 36))
-                .clipShape(Capsule(style: .continuous))
-                .onTapGesture {
-                    startToSearch.toggle()
-                }
-    })
+
     }
     
     var hotPost : some View{
