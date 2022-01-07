@@ -10,33 +10,36 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var uistate = UIState.shared
-
+    @State private var logged : Bool = true
+    
     var body: some View {
         
     
-        NavigationView {
-            
-            if #available(iOS 15.0, *) {
-                mainViews
-                ///Toolbar
-                .toolbar {toolbar}
+        if !logged {
+            LoginView()
+        }else{
+            NavigationView {
+                if #available(iOS 15.0, *) {
+                    mainViews
+                    ///Toolbar
+                    .toolbar {toolbar}
 
-            }else{
-                mainViews
-                .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
+                }else{
+                    mainViews
+                    .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
+                }
             }
-           
-            
+            .overlay(Tabbar())
+            .overlay(TabbarBtn)
+            .PF_FullScreen(isPresented: $uistate.showSettingView) {
+            } content: {
+                SettingView()
+            }
+            .accentColor(.fc1)
+            .navigationViewStyle(StackNavigationViewStyle())
+            .PF_OverProgressView(loadingState: .none)
         }
-        .overlay(Tabbar())
-        .overlay(TabbarBtn)
-        .PF_FullScreen(isPresented: $uistate.showSettingView) {
-        } content: {
-            SettingView()
-        }
-        .accentColor(.fc1)
-        .navigationViewStyle(StackNavigationViewStyle())
-        .PF_OverProgressView(loadingState: .none)
+    
         
     }
     

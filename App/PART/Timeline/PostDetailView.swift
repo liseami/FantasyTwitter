@@ -44,6 +44,12 @@ struct PostDetailView: View {
             .navigationTitle(Text("Tweet"))
             .padding(.all,16)
         }
+        .PF_Navitop(style:offset < -5 ? .large : .none) {
+            BlurView()
+        } TopCenterView: {
+            EmptyView()
+        }
+
     
        
     }

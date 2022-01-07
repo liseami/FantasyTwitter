@@ -26,11 +26,16 @@ public func Customappearance() {
     UINavigationBar.appearance().scrollEdgeAppearance = appearance
     
     
+    
+//  UITableView.appearance().separatorStyle = .none
+    UITableView.appearance().separatorColor = UIColor(Color.BackGround)
+    
+    UITableViewCell.appearance().backgroundColor = UIColor(Color.BackGround)
+    UITableView.appearance().backgroundColor = .clear
+    
 
-    UITableView.appearance().backgroundColor = UIColor(Color.BackGround)
     UITextView.appearance().backgroundColor = UIColor(Color.BackGround)
-    UITableView.appearance().separatorStyle = .none
-    UITableView.appearance().separatorColor = .clear
+  
     UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = UIColor(Color.fc1)
     
     //    DispatchQueue.main.async {
