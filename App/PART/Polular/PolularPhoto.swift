@@ -30,7 +30,7 @@ struct PolularPhoto: View {
                                      ICON(sysname: "seal.fill",fcolor: index < 3 ? .Purple : .MainColor,size: 20)
                                          .overlay(Text("\(index + 1)")
                                                     .mFont(style: .Body_12_B,color: .Card))
-                                     Text("Enzou")
+                                     Text(randomString(5))
                                          .mFont(style: .Body_12_B,color: .fc2)
                                  }
                              }

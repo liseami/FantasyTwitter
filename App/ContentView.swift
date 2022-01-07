@@ -23,7 +23,6 @@ struct ContentView: View {
                     mainViews
                     ///Toolbar
                     .toolbar {toolbar}
-
                 }else{
                     mainViews
                     .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
@@ -53,7 +52,6 @@ struct ContentView: View {
             case .Poluar   :  PolularView()
             case .Search   :  searchView
             case .Message  :  InBoxView()
-                
             }
         }
         ///Navilink
@@ -86,10 +84,11 @@ struct ContentView: View {
                 Spacer()
                 Button {
                 } label: {
+                    let poluar = uistate.TabbarIndex == .Poluar
                     Circle()
-                        .foregroundColor( uistate.TabbarIndex == .Poluar ? .Purple : .MainColor)
+                        .foregroundColor( poluar ? .Purple : .MainColor)
                         .frame(width: SW * 0.13, height: SW * 0.13)
-                        .overlay(ICON(name: "Plus add",fcolor: .Card,size: 24))
+                        .overlay(ICON(name: poluar ? "upup" : "Plus add",fcolor: .Card,size: 24))
                         .shadow(color: .fc1.opacity(0.12), radius: 4, x: 0, y: 4)
                 }
             }

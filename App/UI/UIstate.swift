@@ -17,7 +17,7 @@ class UIState : ObservableObject{
         self.TabbarIndex = tabbarIndex
     }
     
-    @Published var logged : Bool = true
+    @Published var logged : Bool = false
     
     // Tabar
     @Published var TabbarIndex : tabbarItemEnum = .Timeline
@@ -39,7 +39,6 @@ class UIState : ObservableObject{
                 return "Mail"
             case .Poluar :
                 return "Customize"
-           
             }
         }
     }
