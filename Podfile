@@ -23,7 +23,7 @@ pod 'UMCCommonLog'
 pod 'FantasyUI', :path => './FantasyUI'
 
 pod 'SDWebImageSwiftUI'
-
+pod 'WechatOpenSDK'
 end
 
 

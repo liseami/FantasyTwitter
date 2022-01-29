@@ -5,28 +5,25 @@
 //  Created by 赵翔宇 on 2022/1/5.
 //
 
-import SwiftUI
+
+
+ 
 
 struct ContentView: View {
     
     @ObservedObject var uistate = UIState.shared
-    
+    @ObservedObject var usermanager = UserManager.share
     
     var body: some View {
         
     
-        if !uistate.logged {
-            LoginView()
-        }else{
+        if usermanager.logged {
             NavigationView {
-                if #available(iOS 15.0, *) {
+                
                     mainViews
                     ///Toolbar
                     .toolbar {toolbar}
-                }else{
-                    mainViews
-                    .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
-                }
+                
             }
             .overlay(Tabbar())
             .overlay(TabbarBtn)
@@ -36,6 +33,11 @@ struct ContentView: View {
             .accentColor(.fc1)
             .navigationViewStyle(StackNavigationViewStyle())
             .PF_OverProgressView(loadingState: .none)
+            
+        }else{
+            
+            LoginView()
+            
         }
     
         
