@@ -50,7 +50,7 @@ struct ContentView: View {
             Color.BackGround.ignoresSafeArea()
             switch uistate.TabbarIndex{
             ///主页面
-            case .Timeline :  TimeLineView()
+            case .Timeline :  HomeView()
             case .Poluar   :  PolularView()
             case .Search   :  searchView
             case .Message  :  InBoxView()

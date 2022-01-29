@@ -5,23 +5,29 @@
 //  Created by 赵翔宇 on 2022/1/5.
 //
 
+import SwiftUI
+
  
   
 
-struct TimeLineView: View {
+struct HomeView: View {
     @State private var offset : CGFloat = 0
     @ObservedObject var uistate = UIState.shared
+    @ObservedObject var vm = HomeViewModel.share
+    
     var body: some View {
-        
         
         PF_OffsetScrollView(offset: $offset, content: {
            
             LazyVStack {
 
                 Spacer().frame(width: 1, height: 1)
-                ForEach(0..<12){ index in
-                    PostRaw(username: randomString(3), usernickname: "liseami", postcontent: randomString(Int.random(in: 12...140)))
+                if let list = vm.home_timeline{
+                    ForEach(list,id:\.self.id){ tweet in
+                        PostRaw(username: randomString(3), usernickname: "liseami", postcontent: tweet.text ?? "")
+                    }
                 }
+              
                 Spacer().frame(width: 1, height: 80)
             }
             .padding(.all,12)
@@ -34,6 +40,9 @@ struct TimeLineView: View {
                 .resizable()
                 .frame(width: 28, height: 28)
                 .scaledToFit()
+        }
+        .onAppear {
+            vm.get_hoem_timeline()
         }
     }
   

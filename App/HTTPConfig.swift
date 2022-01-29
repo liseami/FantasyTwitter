@@ -23,10 +23,12 @@ extension ApiType {
     
 
     var headers: [String: String]? {
-        return nil
-//        return ["Authorization":"OAuth2" + " " + UserManager.shared.token!]
+        if let token = UserManager.share.access_token{
+            return ["Authorization":"Bearer" + " " + token]
+        }else{
+            return nil
+        }
     }
-
     
 }
 

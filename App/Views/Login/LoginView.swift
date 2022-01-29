@@ -20,9 +20,6 @@ struct LoginView: View {
         ZStack{
             VStack{
                 
-                
-              
-                
                 Link(destination: URL(string: "https://twitter.com/liseami1")!) {
                  Text("最新进展")
                 }
