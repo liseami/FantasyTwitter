@@ -213,7 +213,7 @@ public struct URLEncoding: ParameterEncoding {
         }
         return components
     }
-
+    
     /// Creates a percent-escaped string following RFC 3986 for a query string key or value.
     ///
     /// - Parameter string: `String` to be percent-escaped.

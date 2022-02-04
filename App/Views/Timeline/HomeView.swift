@@ -42,6 +42,7 @@ struct HomeView: View {
                 .scaledToFit()
         }
         .onAppear {
+            UserManager.share.getme()
             vm.get_hoem_timeline()
         }
     }

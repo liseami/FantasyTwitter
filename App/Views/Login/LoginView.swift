@@ -5,6 +5,9 @@
 //  Created by 赵翔宇 on 2022/1/7.
 //
 
+import Swifter
+import AuthenticationServices
+
 
 
 
@@ -14,6 +17,7 @@ struct LoginView: View {
     
     @State private var step : Int = 0
     @StateObject var vm = LoginViewModel.share
+    
     var body: some View {
         
         
@@ -43,7 +47,7 @@ struct LoginView: View {
                 
             }
             .padding(.all,24)
-            
+
             
             Color.MainColor
                 .frame( maxHeight: step > 1 ? .infinity : 12 )
@@ -57,11 +61,10 @@ struct LoginView: View {
         }
     }
     
-    
     ///WKWebView
     var loginWebView : some View {
         ZStack{
-            MTWebView(urlString: "https://twitter.com/i/oauth2/authorize?response_type=code&client_id=\(APP_ClientID)&redirect_uri=\(APP_Redirecturl)&scope=tweet.read%20tweet.write%20tweet.moderate.write%20users.read%20follows.read%20follows.write%20offline.access%20space.read%20mute.read%20mute.write%20like.read%20like.write%20list.read%20list.write%20block.read%20block.write%20&state=state&code_challenge=challenge&code_challenge_method=plain")
+            MTWebView(urlString: "https://twitter.com/i/oauth2/authorize?response_type=code&client_id=\(APP_ClientID)&redirect_uri=\(APP_Redirecturl)&scope=tweet.read%20tweet.write%20tweet.moderate.write%20users.read%20follows.read%20follows.write%20offline.access%20space.read%20mute.read%20mute.write%20like.read%20like.write%20list.read%20list.write%20block.read%20block.write%20&state=\(UUID().uuidString)&code_challenge=challenge&code_challenge_method=plain")
                 .clipped()
                 .ifshow(step == 3)
             ProgressView()

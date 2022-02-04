@@ -7,20 +7,19 @@
 
 import Foundation
 
+
 enum TimeLineApi: ApiType{
     
-    case getHomeTimeline
+    case getLocUserTweets
 
-    var method: HTTPMethod{
+    var method: HTTPRequestMethod{
         .get
     }
     var path: String{
         switch self {
-        case .getHomeTimeline:
-            return "1.1/statuses/home_timeline.json"
+        case .getLocUserTweets:
+            return "2/users/\(913314383526223872)/tweets"
         }
     }
-    
-//    var parameters: [String : Any]?
     
 }

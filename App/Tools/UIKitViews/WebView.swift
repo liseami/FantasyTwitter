@@ -30,10 +30,6 @@ struct MTWebView: View {
     }
 }
 
-
-
-
-
 //MARK: - 视图提供者
 struct MTWebViewRepresentable : UIViewRepresentable {
     let webView: WKWebView
@@ -50,13 +46,15 @@ class MTWebViewNavigationDelegate: NSObject, WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .other{
             if let redirectedUrl = navigationAction.request.url{
-//                    获取重定向时推特发来的code
+                    //获取重定向时推特发来的code
                 if let code = redirectedUrl.queryParameters?.first(where: { somep in
                     somep.key == "code"
                 })?.value
                 {
                     print("🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘")
                     print(code)
+//                  MARK:  Step1
+                    //捕获重定向中的code
                     LoginViewModel.share.code_of_APP_Redirecturl = code
                     print("🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘")
                 }

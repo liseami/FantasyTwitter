@@ -10,13 +10,16 @@ import Foundation
 
 class HomeViewModel : ObservableObject {
     static let share = HomeViewModel()
+    
     @Published var home_timeline : [Tweet]?
     
+    
     func get_hoem_timeline(){
-        let target = TimeLineApi.getHomeTimeline
+        let target = TimeLineApi.getLocUserTweets
         Networking.requestArray(target, modeType: Tweet.self) { r, tweets in
             self.home_timeline = tweets ?? []
         }
     }
 }
+
 

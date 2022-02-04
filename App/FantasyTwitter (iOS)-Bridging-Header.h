@@ -20,4 +20,5 @@ FOUNDATION_EXPORT const unsigned char ColorKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ColorKit/PublicHeader.h>
 
-
+//加密算法
+#import <CommonCrypto/CommonCrypto.h>

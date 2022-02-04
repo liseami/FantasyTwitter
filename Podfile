@@ -9,20 +9,17 @@ target 'FantasyTwitter (iOS)' do
   # Pods for FantasyTwitter (iOS)
 
 
-pod 'Introspect'
-pod 'lottie-ios'
-pod 'CropViewController'
-pod 'FloatingPanel'
-
-
 pod 'UMCommon'
 pod 'UMDevice'
 pod 'UMCCommonLog'
 
+pod 'SDWebImageSwiftUI'
+pod 'lottie-ios'
+pod 'CropViewController'
 
 pod 'FantasyUI', :path => './FantasyUI'
+pod 'Swifter', :path => './Swifter'
 
-pod 'SDWebImageSwiftUI'
 end
 
 
